@@ -32,7 +32,7 @@ export default function Login() {
 
     // If there are no validation errors, navigate to the signup screen
     if (Object.keys(validationErrors).length === 0) {
-      navigation.navigate('signup');
+      navigation.navigate('Home');
     }
   };
 

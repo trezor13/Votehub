@@ -19,7 +19,6 @@ export default function Signup() {
     nationalId: '',
   });
 
-
   const handleLoginPress = () => {
     navigation.navigate('login'); // Navigate to the 'Login' screen
   };
