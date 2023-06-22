@@ -19,6 +19,11 @@ export default function Signup() {
     nationalId: '',
   });
 
+
+  const handleLoginPress = () => {
+    navigation.navigate('login'); // Navigate to the 'Login' screen
+  };
+
   const handleSignupPress = () => {
     const validationErrors = {};
 
@@ -85,7 +90,7 @@ export default function Signup() {
         <Text style={styles.Header}>Sign Up</Text>
         <View style={styles.login}>
           <Text style={{ fontSize: 18, opacity: 0.5 }}>Already have an account?</Text>
-          <Pressable onPress={handleSignupPress}>
+          <Pressable onPress={handleLoginPress}>
             <Text style={styles.signup}>Login</Text>
           </Pressable>
         </View>
